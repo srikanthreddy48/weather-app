@@ -1,0 +1,33 @@
+<!--
+
+<section>
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <label for="cityName">City</label>
+                <input ngControl="location" type="text" id="city" required>
+                <button type="submit">Add City</button>
+            </form>
+            <div>
+                <span class="info">City found:</span> City Name
+            </div>
+</section> -->
+ 
+        <div class="card login meetings">
+            <div class="textintro">
+                <h2>Add City</h2>
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="inputwrapper">
+
+                        <input ngControl="location" placeholder="City" type="text" id="city" ng-required="true" class="ng-touched ng-dirty ng-valid-parse  " required="required">
+                        <button type="submit" type="submit" class="btn btn-right">Add</button>
+
+                      </div>
+                </form>
+                    <!--  <span class="info">City found:</span> City Name -->
+            <div>
+                 <div class="textintro">
+                    <br/><br/> </div>
+        </div>
+
+ 
+ 
+  
