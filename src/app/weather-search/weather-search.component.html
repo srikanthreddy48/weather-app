@@ -16,8 +16,15 @@
                 <h2>Add City</h2>
                 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
                     <div class="inputwrapper">
-
-                        <input ngControl="location" placeholder="City" type="text" id="city" ng-required="true" class="ng-touched ng-dirty ng-valid-parse  " required="required">
+                        <input name="location" placeholder="City" type="text" id="city" required ngModel>
+                        <!-- <input
+                        type="text"
+                        id="city"
+                        class="form-control"
+                        name="location"
+                        required
+                        ngModel
+                        > -->
                         <button type="submit" type="submit" class="btn btn-right">Add</button>
 
                       </div>

@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {WEATHER_ITEMS} from "./weather.data";
-import {Headers, Http, Response} from "@angular/Http";
 import {Observable} from "rxjs/Observable"
+import { Http } from "@angular/http";
 import {WeatherItem} from "./weather-item"
 import 'rxjs/Rx';
 @Injectable()

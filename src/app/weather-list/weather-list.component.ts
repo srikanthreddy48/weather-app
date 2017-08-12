@@ -13,22 +13,22 @@ import {WEATHER_ITEMS} from "../weather.data";
 
 })
 
-export class WeatherListComponent implements OnInit {
-    weatherItems: WeatherItem[];
-
-    ngOnInit():any{
-        this.weatherItems = WEATHER_ITEMS;
-    }
-}
-
-// export class WeatherListComponent implements OnInit{
-//     weatherItems:WeatherItem[];
-
-//     constructor(private _weatherService: WeatherService){
-
-//     }
+// export class WeatherListComponent implements OnInit {
+//     weatherItems: WeatherItem[];
 
 //     ngOnInit():any{
-//         this.weatherItems = this._weatherService.getWeatherItems();
+//         this.weatherItems = WEATHER_ITEMS;
 //     }
 // }
+
+export class WeatherListComponent implements OnInit{
+    weatherItems:WeatherItem[];
+
+    constructor(private _weatherService: WeatherService){
+
+    }
+
+    ngOnInit():any{
+        this.weatherItems = this._weatherService.getWeatherItems();
+    }
+}
